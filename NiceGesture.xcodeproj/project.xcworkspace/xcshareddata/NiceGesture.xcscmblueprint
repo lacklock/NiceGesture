@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "923EC9929ABC61B2A322F0E18D0885136F6F4012",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "07254622BEE060C7EAAC3369009E9ED24D387F35" : 0,
+    "923EC9929ABC61B2A322F0E18D0885136F6F4012" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "34A59DC1-F471-48A0-8D75-FCE7712D165C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "07254622BEE060C7EAAC3369009E9ED24D387F35" : "",
+    "923EC9929ABC61B2A322F0E18D0885136F6F4012" : "NiceGesture\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NiceGesture",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NiceGesture.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/trawor\/XToDo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "07254622BEE060C7EAAC3369009E9ED24D387F35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lacklock\/NiceGesture.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "923EC9929ABC61B2A322F0E18D0885136F6F4012"
+    }
+  ]
+}

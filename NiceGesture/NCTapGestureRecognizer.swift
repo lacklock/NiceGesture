@@ -8,6 +8,8 @@
 
 import UIKit
 
+public typealias ncTapGestrueHandler=(tapGestureRecognizer:UITapGestureRecognizer)->()
+
 class NCTapGestureRecognizer: UITapGestureRecognizer {
     
     var tapPromise = NCTapPromise()

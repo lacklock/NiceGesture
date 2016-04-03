@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,13 @@
 		3A24C04B1CB11A9C00D213E0 /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C04A1CB11A9C00D213E0 /* TapViewController.swift */; };
 		3A24C04E1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C04D1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift */; };
 		3A24C0B81CB1262100D213E0 /* NCTapPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C0B71CB1262100D213E0 /* NCTapPromise.swift */; };
+		3A24C0BB1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C0BA1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift */; };
+		3A24C0BD1CB162D700D213E0 /* NCGesturePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C0BC1CB162D700D213E0 /* NCGesturePromise.swift */; };
+		3A24C0C11CB16F6600D213E0 /* LongPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24C0C01CB16F6600D213E0 /* LongPressViewController.swift */; };
+		3ACEC40B1CB17689004EF9BF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40A1CB17689004EF9BF /* Util.swift */; };
+		3ACEC40C1CB1770E004EF9BF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40A1CB17689004EF9BF /* Util.swift */; };
+		3ACEC40E1CB17B50004EF9BF /* NCPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40D1CB17B50004EF9BF /* NCPanGestureRecognizer.swift */; };
+		3ACEC4101CB17C5B004EF9BF /* PanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,12 @@
 		3A24C04A1CB11A9C00D213E0 /* TapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
 		3A24C04D1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		3A24C0B71CB1262100D213E0 /* NCTapPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCTapPromise.swift; sourceTree = "<group>"; };
+		3A24C0BA1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCLongPressGestureRecognizer.swift; sourceTree = "<group>"; };
+		3A24C0BC1CB162D700D213E0 /* NCGesturePromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCGesturePromise.swift; sourceTree = "<group>"; };
+		3A24C0C01CB16F6600D213E0 /* LongPressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressViewController.swift; sourceTree = "<group>"; };
+		3ACEC40A1CB17689004EF9BF /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3ACEC40D1CB17B50004EF9BF /* NCPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +133,13 @@
 		3A24C0161CB115DC00D213E0 /* NiceGesture */ = {
 			isa = PBXGroup;
 			children = (
-				3A24C0171CB115DC00D213E0 /* NiceGesture.h */,
-				3A24C0191CB115DC00D213E0 /* Info.plist */,
+				3A24C0B91CB13AE500D213E0 /* SupportingFiles */,
 				3A24C01F1CB1169300D213E0 /* NiceUIViewExtension.swift */,
-				3A24C04D1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift */,
 				3A24C0B71CB1262100D213E0 /* NCTapPromise.swift */,
+				3A24C0BC1CB162D700D213E0 /* NCGesturePromise.swift */,
+				3A24C04D1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift */,
+				3A24C0BA1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift */,
+				3ACEC40D1CB17B50004EF9BF /* NCPanGestureRecognizer.swift */,
 			);
 			path = NiceGesture;
 			sourceTree = "<group>";
@@ -132,9 +147,12 @@
 		3A24C0261CB118E700D213E0 /* NiceGestureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3A24C04C1CB11AA700D213E0 /* ProjectFiles */,
 				3A24C02B1CB118E700D213E0 /* Main.storyboard */,
 				3A24C04A1CB11A9C00D213E0 /* TapViewController.swift */,
-				3A24C04C1CB11AA700D213E0 /* ProjectFiles */,
+				3A24C0C01CB16F6600D213E0 /* LongPressViewController.swift */,
+				3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */,
+				3ACEC40A1CB17689004EF9BF /* Util.swift */,
 			);
 			path = NiceGestureDemo;
 			sourceTree = "<group>";
@@ -157,6 +175,15 @@
 				3A24C0301CB118E700D213E0 /* LaunchScreen.storyboard */,
 			);
 			name = ProjectFiles;
+			sourceTree = "<group>";
+		};
+		3A24C0B91CB13AE500D213E0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3A24C0171CB115DC00D213E0 /* NiceGesture.h */,
+				3A24C0191CB115DC00D213E0 /* Info.plist */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +261,7 @@
 		3A24C00B1CB115DC00D213E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zhuo;
@@ -251,7 +279,7 @@
 				};
 			};
 			buildConfigurationList = 3A24C00E1CB115DC00D213E0 /* Build configuration list for PBXProject "NiceGesture" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -303,7 +331,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A24C04E1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift in Sources */,
+				3A24C0BD1CB162D700D213E0 /* NCGesturePromise.swift in Sources */,
+				3ACEC40E1CB17B50004EF9BF /* NCPanGestureRecognizer.swift in Sources */,
 				3A24C0201CB1169300D213E0 /* NiceUIViewExtension.swift in Sources */,
+				3A24C0BB1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift in Sources */,
 				3A24C0B81CB1262100D213E0 /* NCTapPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +344,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A24C04B1CB11A9C00D213E0 /* TapViewController.swift in Sources */,
+				3A24C0C11CB16F6600D213E0 /* LongPressViewController.swift in Sources */,
 				3A24C0281CB118E700D213E0 /* AppDelegate.swift in Sources */,
+				3ACEC4101CB17C5B004EF9BF /* PanViewController.swift in Sources */,
+				3ACEC40B1CB17689004EF9BF /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A24C03D1CB118E700D213E0 /* NiceGestureDemoUITests.swift in Sources */,
+				3ACEC40C1CB1770E004EF9BF /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +590,7 @@
 				3A24C01E1CB115DC00D213E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A24C03F1CB118E700D213E0 /* Build configuration list for PBXNativeTarget "NiceGestureDemo" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +599,7 @@
 				3A24C0411CB118E700D213E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A24C0421CB118E700D213E0 /* Build configuration list for PBXNativeTarget "NiceGestureDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +608,7 @@
 				3A24C0441CB118E700D213E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

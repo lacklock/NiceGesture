@@ -8,10 +8,10 @@
 
 import Foundation
 
-public typealias ncTapGestrueHandler=(tapGestureRecognizer:UITapGestureRecognizer)->()
 
 extension UIView{
     
+    // MARK:Tap
     public func nc_addTapGestureWithConfigClosure(@noescape config:ncTapGestrueHandler)->NCTapPromise{
         let tapRecognizer=NCTapGestureRecognizer(config: config)
         addGestureRecognizer(tapRecognizer)
@@ -23,4 +23,26 @@ extension UIView{
         addGestureRecognizer(tapRecognizer)
     }
     
+    // MARK:LongPress
+    public func nc_addLongPressGestureWithConfigClosure(@noescape config:ncLongPressHandler)->NCGesturePromise<UILongPressGestureRecognizer>{
+        let recognizer = NCLongPressGestureRecognizer(config: config)
+        addGestureRecognizer(recognizer)
+        return recognizer.promise
+    }
+    
+    public func nc_addLongPressGesture()->NCGesturePromise<UILongPressGestureRecognizer>{
+        return nc_addLongPressGestureWithConfigClosure({ _ in })
+    }
+    
+    
+    // MARK:Pan
+    public func nc_addPanGestureWithConfigClosure(@noescape config:ncPanHandler)->NCGesturePromise<UIPanGestureRecognizer>{
+        let recognizer = NCPanGestureRecognizer(config: config)
+        addGestureRecognizer(recognizer)
+        return recognizer.promise
+    }
+    
+    public func nc_addPanGesture()->NCGesturePromise<UIPanGestureRecognizer>{
+        return nc_addPanGestureWithConfigClosure({ _ in })
+    }
 }

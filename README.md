@@ -8,6 +8,7 @@ Use tapGesture:
 ```swift
 
   view.nc_addTapGestureWithConfigClosure { (tapGestureRecognizer) -> () in
+            // Configure gesture recognizer,like this:
             tapGestureRecognizer.numberOfTapsRequired=2
         }.whenTapped {(tapGestureRecognizer) -> () in
             //doSomething()
