@@ -3,7 +3,7 @@ Best way to use UIGesture
 
 #Usage
 
-tapGesture:
+###tapGesture:
 
 because tapGesture is only have one state,so it's only have method <code>whenTapped</code>
 
@@ -23,14 +23,14 @@ because tapGesture is only have one state,so it's only have method <code>whenTap
 
 ```
 
-LongPress,Pan:
+###LongPress,Pan:
 
 if you want to cinfigure gesture,use this method:
 
 ```swift
 
   view.nc_addLongPressGestureWithConfigClosure({ (gestureRecognizer) -> () in
-            //Configure gesture recognizer
+        //Configure gesture recognizer
   })
 
 ```
@@ -46,7 +46,8 @@ then,you can add hanlder function as you want:
 
 ```swift
 
-   view.nc_addPanGesture().whenBegan { (recognizer) -> Void in
+   view.nc_addPanGesture()
+       .whenBegan { (recognizer) -> Void in
             
        }.whenCancelled { (recognizer) -> Void in
             
