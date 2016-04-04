@@ -1,7 +1,8 @@
 # NiceGesture
-Best way to use UIGesture
-
 ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
+
+The best way to use UIGesture
+
 
 #Usage
 
