@@ -1,6 +1,8 @@
 # NiceGesture
 Best way to use UIGesture
 
+![License](https://img.shields.io/github/license/mashape/apistatus.svg)
+
 #Usage
 
 ###TapGesture:
@@ -61,7 +63,7 @@ then,you can add hanlder function as you want:
 
 ```
 
-or if you want set one handler for many states,use <code>whenStatesHappend</code>
+or if you want set one handler for many states,use <code>whenStatesHappend</code>:
 
 ```swift
 
