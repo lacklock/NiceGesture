@@ -23,7 +23,7 @@ because tapGesture is only have one state,so it's only have method <code>whenTap
 
 ```
 
-###LongPress,Pan,Pinch:
+###LongPress,Pan,Pinch,Rotate,Swipe,ScreenEdgesPan:
 
 if you want to cinfigure gesture,use this method:
 
@@ -58,6 +58,16 @@ then,you can add hanlder function as you want:
        }.whenFailed { (recognizer) -> Void in
             
        }
+
+```
+
+or if you want set one handler for many states,use <code>whenStatesHappend</code>
+
+```swift
+
+lbState.nc_addPanGesture().whenStatesHappend([.Ended,.Changed]) { (gestureRecognizer) -> Void in
+            
+        }
 
 ```
 

@@ -41,6 +41,12 @@ public class NCGesturePromise<T:UIGestureRecognizer>: NSObject {
         }
     }
     
+    /**
+     one handler for many states
+     
+     - parameter states:  UIGestureRecognizerStates
+     
+     */
     public func whenStatesHappend(states:[UIGestureRecognizerState],handler:ncGestureHandler)->NCGesturePromise<T>{
         for state in states{
             switch state {
