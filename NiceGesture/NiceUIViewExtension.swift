@@ -45,4 +45,15 @@ extension UIView{
     public func nc_addPanGesture()->NCGesturePromise<UIPanGestureRecognizer>{
         return nc_addPanGestureWithConfigClosure({ _ in })
     }
+    
+    // MARK:Pinch
+    public func nc_addPinchGestureWithConfigClosure(@noescape config:ncPinchHandler)->NCGesturePromise<UIPinchGestureRecognizer>{
+        let recognizer = NCPinchGestureRecognizer(config: config)
+        addGestureRecognizer(recognizer)
+        return recognizer.promise
+    }
+    
+    public func nc_addPinchGesture()->NCGesturePromise<UIPinchGestureRecognizer>{
+        return nc_addPinchGestureWithConfigClosure({ _ in })
+    }
 }

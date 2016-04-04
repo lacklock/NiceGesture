@@ -26,6 +26,8 @@
 		3ACEC40C1CB1770E004EF9BF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40A1CB17689004EF9BF /* Util.swift */; };
 		3ACEC40E1CB17B50004EF9BF /* NCPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40D1CB17B50004EF9BF /* NCPanGestureRecognizer.swift */; };
 		3ACEC4101CB17C5B004EF9BF /* PanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */; };
+		3ACEC4121CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC4111CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift */; };
+		3ACEC4141CB250E9004EF9BF /* PinchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC4131CB250E9004EF9BF /* PinchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		3ACEC40A1CB17689004EF9BF /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		3ACEC40D1CB17B50004EF9BF /* NCPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanViewController.swift; sourceTree = "<group>"; };
+		3ACEC4111CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCPinchGestureRecognizer.swift; sourceTree = "<group>"; };
+		3ACEC4131CB250E9004EF9BF /* PinchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				3A24C04D1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift */,
 				3A24C0BA1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift */,
 				3ACEC40D1CB17B50004EF9BF /* NCPanGestureRecognizer.swift */,
+				3ACEC4111CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift */,
 			);
 			path = NiceGesture;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				3A24C04A1CB11A9C00D213E0 /* TapViewController.swift */,
 				3A24C0C01CB16F6600D213E0 /* LongPressViewController.swift */,
 				3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */,
+				3ACEC4131CB250E9004EF9BF /* PinchViewController.swift */,
 				3ACEC40A1CB17689004EF9BF /* Util.swift */,
 			);
 			path = NiceGestureDemo;
@@ -335,6 +341,7 @@
 				3ACEC40E1CB17B50004EF9BF /* NCPanGestureRecognizer.swift in Sources */,
 				3A24C0201CB1169300D213E0 /* NiceUIViewExtension.swift in Sources */,
 				3A24C0BB1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift in Sources */,
+				3ACEC4121CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift in Sources */,
 				3A24C0B81CB1262100D213E0 /* NCTapPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +355,7 @@
 				3A24C0281CB118E700D213E0 /* AppDelegate.swift in Sources */,
 				3ACEC4101CB17C5B004EF9BF /* PanViewController.swift in Sources */,
 				3ACEC40B1CB17689004EF9BF /* Util.swift in Sources */,
+				3ACEC4141CB250E9004EF9BF /* PinchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -76,6 +76,26 @@
                                             <segue destination="3nS-tk-VF8" kind="show" id="K55-nZ-3NI"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pmt-Wa-TTe" style="IBUITableViewCellStyleDefault" id="7pb-ex-aPB">
+                                        <rect key="frame" x="0.0" y="196" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7pb-ex-aPB" id="tn3-J1-73r">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Pinch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pmt-Wa-TTe">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Eq9-Rw-xfp" kind="show" id="B9F-gT-Ni2"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -222,7 +242,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NR-8C-0Io" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="1181"/>
+            <point key="canvasLocation" x="1020" y="1195"/>
+        </scene>
+        <!--Pinch-->
+        <scene sceneID="f5U-lB-a8A">
+            <objects>
+                <viewController title="Pinch" id="Eq9-Rw-xfp" customClass="PinchViewController" customModule="NiceGestureDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I3G-Cc-MXB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tbv-sp-QUZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pOG-Ql-3BK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gp-fS-1o2">
+                                <rect key="frame" x="40" y="194" width="240" height="180"/>
+                                <color key="backgroundColor" red="0.49125498533248901" green="0.82893639802932739" blue="0.98770731687545776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="G0E-ez-Rrb"/>
+                                    <constraint firstAttribute="height" constant="180" id="nR1-PX-lSb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Gp-fS-1o2" firstAttribute="centerX" secondItem="pOG-Ql-3BK" secondAttribute="centerX" id="JZV-yG-cKY"/>
+                            <constraint firstItem="2Gp-fS-1o2" firstAttribute="centerY" secondItem="pOG-Ql-3BK" secondAttribute="centerY" id="SBm-cL-Rh9"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lbState" destination="2Gp-fS-1o2" id="1ik-WU-wHK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHr-Kl-LVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611" y="1166"/>
         </scene>
     </scenes>
 </document>
