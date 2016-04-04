@@ -56,4 +56,45 @@ extension UIView{
     public func nc_addPinchGesture()->NCGesturePromise<UIPinchGestureRecognizer>{
         return nc_addPinchGestureWithConfigClosure({ _ in })
     }
+    
+    // MARK:Rotation
+    public func nc_addRotationGestureWithConfigClosure(@noescape config:ncRotationHandler)->NCGesturePromise<UIRotationGestureRecognizer>{
+        let recognizer = NCRotationGestureRecognizer(config: config)
+        addGestureRecognizer(recognizer)
+        return recognizer.promise
+    }
+    
+    public func nc_addRotationGesture()->NCGesturePromise<UIRotationGestureRecognizer>{
+        return nc_addRotationGestureWithConfigClosure({ _ in })
+    }
+    
+    // MARK:Swipe
+    public func nc_addSwipeGestureWithConfigClosure(@noescape config:ncSwipeHandler)->NCGesturePromise<UISwipeGestureRecognizer>{
+        let recognizer = NCSwipeGestureRecognizer(config: config)
+        addGestureRecognizer(recognizer)
+        return recognizer.promise
+    }
+    
+    public func nc_addSwipeGesture()->NCGesturePromise<UISwipeGestureRecognizer>{
+        return nc_addSwipeGestureWithConfigClosure({ _ in })
+    }
+    
+    // MARK:ScreenEdgePan
+    public func nc_addScreenEdgePanGestureWithConfigClosure(@noescape config:ncEdgePanchHandler)->NCGesturePromise<UIScreenEdgePanGestureRecognizer>{
+        let recognizer = NCScreenEdgePanGestureRecognizer(config: config)
+        addGestureRecognizer(recognizer)
+        return recognizer.promise
+    }
+    
+    public func nc_addScreenEdgePanGesture()->NCGesturePromise<UIScreenEdgePanGestureRecognizer>{
+        return nc_addScreenEdgePanGestureWithConfigClosure({ _ in })
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }

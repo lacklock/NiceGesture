@@ -28,6 +28,12 @@
 		3ACEC4101CB17C5B004EF9BF /* PanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */; };
 		3ACEC4121CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC4111CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift */; };
 		3ACEC4141CB250E9004EF9BF /* PinchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC4131CB250E9004EF9BF /* PinchViewController.swift */; };
+		3ACEC4161CB2A9F8004EF9BF /* NCRotationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC4151CB2A9F8004EF9BF /* NCRotationGestureRecognizer.swift */; };
+		3ACEC4181CB2AA14004EF9BF /* NCSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC4171CB2AA14004EF9BF /* NCSwipeGestureRecognizer.swift */; };
+		3ACEC41A1CB2AA3A004EF9BF /* NCScreenEdgePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC4191CB2AA3A004EF9BF /* NCScreenEdgePanGestureRecognizer.swift */; };
+		3ACEC41C1CB2B16E004EF9BF /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC41B1CB2B16E004EF9BF /* RotationViewController.swift */; };
+		3ACEC41E1CB2B17D004EF9BF /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC41D1CB2B17D004EF9BF /* SwipeViewController.swift */; };
+		3ACEC4201CB2B192004EF9BF /* ScreenEdgePanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACEC41F1CB2B192004EF9BF /* ScreenEdgePanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,12 @@
 		3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanViewController.swift; sourceTree = "<group>"; };
 		3ACEC4111CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCPinchGestureRecognizer.swift; sourceTree = "<group>"; };
 		3ACEC4131CB250E9004EF9BF /* PinchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchViewController.swift; sourceTree = "<group>"; };
+		3ACEC4151CB2A9F8004EF9BF /* NCRotationGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCRotationGestureRecognizer.swift; sourceTree = "<group>"; };
+		3ACEC4171CB2AA14004EF9BF /* NCSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
+		3ACEC4191CB2AA3A004EF9BF /* NCScreenEdgePanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCScreenEdgePanGestureRecognizer.swift; sourceTree = "<group>"; };
+		3ACEC41B1CB2B16E004EF9BF /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		3ACEC41D1CB2B17D004EF9BF /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		3ACEC41F1CB2B192004EF9BF /* ScreenEdgePanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenEdgePanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +157,9 @@
 				3A24C0BA1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift */,
 				3ACEC40D1CB17B50004EF9BF /* NCPanGestureRecognizer.swift */,
 				3ACEC4111CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift */,
+				3ACEC4151CB2A9F8004EF9BF /* NCRotationGestureRecognizer.swift */,
+				3ACEC4171CB2AA14004EF9BF /* NCSwipeGestureRecognizer.swift */,
+				3ACEC4191CB2AA3A004EF9BF /* NCScreenEdgePanGestureRecognizer.swift */,
 			);
 			path = NiceGesture;
 			sourceTree = "<group>";
@@ -158,7 +173,9 @@
 				3A24C0C01CB16F6600D213E0 /* LongPressViewController.swift */,
 				3ACEC40F1CB17C5B004EF9BF /* PanViewController.swift */,
 				3ACEC4131CB250E9004EF9BF /* PinchViewController.swift */,
-				3ACEC40A1CB17689004EF9BF /* Util.swift */,
+				3ACEC41B1CB2B16E004EF9BF /* RotationViewController.swift */,
+				3ACEC41D1CB2B17D004EF9BF /* SwipeViewController.swift */,
+				3ACEC41F1CB2B192004EF9BF /* ScreenEdgePanViewController.swift */,
 			);
 			path = NiceGestureDemo;
 			sourceTree = "<group>";
@@ -175,6 +192,7 @@
 		3A24C04C1CB11AA700D213E0 /* ProjectFiles */ = {
 			isa = PBXGroup;
 			children = (
+				3ACEC40A1CB17689004EF9BF /* Util.swift */,
 				3A24C0271CB118E700D213E0 /* AppDelegate.swift */,
 				3A24C02E1CB118E700D213E0 /* Assets.xcassets */,
 				3A24C0331CB118E700D213E0 /* Info.plist */,
@@ -337,12 +355,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A24C04E1CB11F3E00D213E0 /* NCTapGestureRecognizer.swift in Sources */,
+				3ACEC41A1CB2AA3A004EF9BF /* NCScreenEdgePanGestureRecognizer.swift in Sources */,
 				3A24C0BD1CB162D700D213E0 /* NCGesturePromise.swift in Sources */,
 				3ACEC40E1CB17B50004EF9BF /* NCPanGestureRecognizer.swift in Sources */,
 				3A24C0201CB1169300D213E0 /* NiceUIViewExtension.swift in Sources */,
+				3ACEC4161CB2A9F8004EF9BF /* NCRotationGestureRecognizer.swift in Sources */,
 				3A24C0BB1CB13B6300D213E0 /* NCLongPressGestureRecognizer.swift in Sources */,
 				3ACEC4121CB23B3A004EF9BF /* NCPinchGestureRecognizer.swift in Sources */,
 				3A24C0B81CB1262100D213E0 /* NCTapPromise.swift in Sources */,
+				3ACEC4181CB2AA14004EF9BF /* NCSwipeGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,9 +374,12 @@
 				3A24C04B1CB11A9C00D213E0 /* TapViewController.swift in Sources */,
 				3A24C0C11CB16F6600D213E0 /* LongPressViewController.swift in Sources */,
 				3A24C0281CB118E700D213E0 /* AppDelegate.swift in Sources */,
+				3ACEC41E1CB2B17D004EF9BF /* SwipeViewController.swift in Sources */,
 				3ACEC4101CB17C5B004EF9BF /* PanViewController.swift in Sources */,
+				3ACEC41C1CB2B16E004EF9BF /* RotationViewController.swift in Sources */,
 				3ACEC40B1CB17689004EF9BF /* Util.swift in Sources */,
 				3ACEC4141CB250E9004EF9BF /* PinchViewController.swift in Sources */,
+				3ACEC4201CB2B192004EF9BF /* ScreenEdgePanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

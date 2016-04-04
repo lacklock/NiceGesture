@@ -11,6 +11,7 @@ import UIKit
 public typealias ncPinchHandler=(gestureRecognizer:UIPinchGestureRecognizer)->()
 
 class NCPinchGestureRecognizer: UIPinchGestureRecognizer {
+    
     var promise = NCGesturePromise<UIPinchGestureRecognizer>()
     
     init(@noescape config:ncPinchHandler={ _ in }){

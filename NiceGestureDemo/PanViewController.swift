@@ -28,6 +28,9 @@ class PanViewController: UIViewController {
                 self.lbState.transform=CGAffineTransformMakeTranslation(offsetX, offsetY)
         }
         
+        lbState.nc_addPanGesture().whenStatesHappend([.Ended,.Changed]) { (gestureRecognizer) -> Void in
+            print("another way :\(gestureRecognizer.state.toString())")
+        }
     }
     
     

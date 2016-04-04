@@ -11,7 +11,7 @@ import UIKit
 
 public class NCGesturePromise<T:UIGestureRecognizer>: NSObject {
     
-    public typealias ncGestureHandler = (recognizer:T)->Void
+    public typealias ncGestureHandler = (gestureRecognizer:T)->Void
 
     var beganHandler:ncGestureHandler = { _ in }
     var cancelledHandler:ncGestureHandler = { _ in }
@@ -24,23 +24,43 @@ public class NCGesturePromise<T:UIGestureRecognizer>: NSObject {
         super.init()
     }
     
-    func gesureRecognizerHandler(recognizer:UIGestureRecognizer){
-        switch recognizer.state {
+    func gesureRecognizerHandler(gestureRecognizer:UIGestureRecognizer){
+        switch gestureRecognizer.state {
         case .Began:
-            beganHandler(recognizer: recognizer as! T)
+            beganHandler(gestureRecognizer: gestureRecognizer as! T)
         case .Cancelled:
-            cancelledHandler(recognizer: recognizer as! T)
+            cancelledHandler(gestureRecognizer: gestureRecognizer as! T)
         case .Changed:
-            changedHandler(recognizer: recognizer as! T)
+            changedHandler(gestureRecognizer: gestureRecognizer as! T)
         case .Ended:
-            endedHandler(recognizer: recognizer as! T)
+            endedHandler(gestureRecognizer: gestureRecognizer as! T)
         case .Failed:
-            failedHandler(recognizer: recognizer as! T)
+            failedHandler(gestureRecognizer: gestureRecognizer as! T)
         case .Possible:
             break
         }
     }
-
+    
+    public func whenStatesHappend(states:[UIGestureRecognizerState],handler:ncGestureHandler)->NCGesturePromise<T>{
+        for state in states{
+            switch state {
+            case .Began:
+                beganHandler=handler
+            case .Cancelled:
+                cancelledHandler=handler
+            case .Changed:
+                changedHandler=handler
+            case .Ended:
+                endedHandler=handler
+            case .Failed:
+                failedHandler=handler
+            case .Possible:
+                break
+            }
+        }
+        return self
+    }
+    
     public func whenBegan(handler:ncGestureHandler)->NCGesturePromise<T>{
         beganHandler=handler
         return self
@@ -65,4 +85,6 @@ public class NCGesturePromise<T:UIGestureRecognizer>: NSObject {
         failedHandler=handler
         return self
     }
+    
+    
 }
