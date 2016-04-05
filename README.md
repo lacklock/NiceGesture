@@ -1,4 +1,5 @@
 # NiceGesture
+![Build Status](https://travis-ci.org/lacklock/NiceGesture.svg?branch=master)
 ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 The best way to use UIGesture
