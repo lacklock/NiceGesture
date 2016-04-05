@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NiceGesture"
-  s.version      = "0.9.0"
+  s.version      = "0.9"
   s.summary      = "The best way to use UIGesture"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.homepage     = "https://github.com/lacklock/NiceGesture"
