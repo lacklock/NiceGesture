@@ -1,5 +1,6 @@
 # NiceGesture
 ![Build Status](https://travis-ci.org/lacklock/NiceGesture.svg?branch=master)
+[![CocoaPods](https://img.shields.io/cocoapods/v/NiceGesture.svg?style=flat)](http://cocoadocs.org/docsets/NiceGesture/)
 ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 The best way to use UIGesture
