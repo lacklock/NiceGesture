@@ -76,9 +76,25 @@ lbState.nc_addPanGesture().whenStatesHappend([.Ended,.Changed]) { (gestureRecogn
 
 ```
 
+#Installation
+
+##CocoaPods
+To integrate NiceGesture into your Xcode project using CocoaPods, specify it in your Podfile:
+``` ruby
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'NiceGesture'
+```
+##Manual
+Just copy the files which under NiceGesture folder to your project
+
+##Carthage
+Soon will coming...
+
 #Contact
 
-here is my Weibo : [@没故事的卓同学](http://weibo.com/1926303682)
+Weibo : [@没故事的卓同学](http://weibo.com/1926303682)
 
 # License
 
