@@ -14,7 +14,7 @@ class NCRotationGestureRecognizer: UIRotationGestureRecognizer {
     var promise = NCGesturePromise<UIRotationGestureRecognizer>()
     
     init(@noescape config:ncRotationHandler={ _ in }){
-        super.init(target: promise, action: Selector("gesureRecognizerHandler:"))
+        super.init(target: promise, action: #selector(NCGesturePromise.gesureRecognizerHandler(_:)))
         config(gestureRecognizer: self)
     }
 }

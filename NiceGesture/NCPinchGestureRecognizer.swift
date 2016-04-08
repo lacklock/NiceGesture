@@ -15,7 +15,7 @@ class NCPinchGestureRecognizer: UIPinchGestureRecognizer {
     var promise = NCGesturePromise<UIPinchGestureRecognizer>()
     
     init(@noescape config:ncPinchHandler={ _ in }){
-        super.init(target: promise, action: Selector("gesureRecognizerHandler:"))
+        super.init(target: promise, action: #selector(NCGesturePromise.gesureRecognizerHandler(_:)))
         config(gestureRecognizer: self)
     }
 }

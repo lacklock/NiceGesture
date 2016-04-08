@@ -14,7 +14,7 @@ public class NCPanGestureRecognizer: UIPanGestureRecognizer {
     var promise = NCGesturePromise<UIPanGestureRecognizer>()
     
     init(@noescape config:ncPanHandler={ _ in }){
-        super.init(target: promise, action: Selector("gesureRecognizerHandler:"))
+        super.init(target: promise, action: #selector(NCGesturePromise.gesureRecognizerHandler(_:)))
         config(gestureRecognizer: self)
     }
     
