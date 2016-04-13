@@ -1,5 +1,6 @@
 # NiceGesture
 ![Build Status](https://travis-ci.org/lacklock/NiceGesture.svg?branch=master)
+![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/NiceGesture.svg?style=flat)](http://cocoadocs.org/docsets/NiceGesture/)
 ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
 
