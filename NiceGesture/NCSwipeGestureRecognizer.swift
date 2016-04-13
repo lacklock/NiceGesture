@@ -14,7 +14,7 @@ class NCSwipeGestureRecognizer: UISwipeGestureRecognizer {
     var promise = NCGesturePromise<UISwipeGestureRecognizer>()
     
     init(@noescape config:ncSwipeHandler={ _ in }){
-        super.init(target: promise, action: Selector("gesureRecognizerHandler:"))
+        super.init(target: promise, action: #selector(NCGesturePromise.gesureRecognizerHandler(_:)))
         config(gestureRecognizer: self)
     }
 }
