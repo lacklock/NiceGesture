@@ -79,6 +79,12 @@ extension UIView{
         return nc_addSwipeGestureWithConfigClosure({ _ in })
     }
     
+    public func nc_whenSwipedInDirection(direction:UISwipeGestureRecognizerDirection,gestureRecognizer:ncSwipeHandler){
+        nc_addSwipeGestureWithConfigClosure { (swipeGestureRecognizer) in
+            swipeGestureRecognizer.direction=direction
+        }.whenEnded(gestureRecognizer)
+    }
+    
     // MARK:ScreenEdgePan
     public func nc_addScreenEdgePanGestureWithConfigClosure(@noescape config:ncEdgePanchHandler)->NCGesturePromise<UIScreenEdgePanGestureRecognizer>{
         let recognizer = NCScreenEdgePanGestureRecognizer(config: config)

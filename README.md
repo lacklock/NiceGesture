@@ -50,6 +50,7 @@ if you needn't configure,use this method to start:
 
 then,you can add hanlder function as you want:
 
+
 ```swift
 
    view.nc_addPanGesture()
@@ -67,6 +68,17 @@ then,you can add hanlder function as you want:
 
 ```
 
+a convenient way to use SwipeGesture: 
+
+
+```swift
+
+   view.nc_whenSwipedInDirection(.Down) { (gestureRecognizer) in
+            
+        }
+
+```
+
 or if you want set one handler for many states,use <code>whenStatesHappend</code>:
 
 ```swift
@@ -77,6 +89,16 @@ lbState.nc_addPanGesture().whenStatesHappend([.Ended,.Changed]) { (gestureRecogn
 
 ```
 
+###Attention
+
+Custom gestureRecognizerHandler is retained by UIGestureRecognizer , UIGestureRecognizer is retained by target view, so if you're using self property remeber  explicit <code>[unowned self]</code> to avoid retain cycle:
+
+```swift
+ lbState.nc_whenSwipedInDirection(.Down) {[unowned self]  (gestureRecognizer) in
+            self.lbState.text="Down"
+        }
+
+```
 #Installation
 
 ###CocoaPods

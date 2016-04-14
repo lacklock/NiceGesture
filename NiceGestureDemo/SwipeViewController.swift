@@ -26,6 +26,10 @@ class SwipeViewController: UIViewController {
             }.whenEnded{[unowned self] (recognizer) -> Void in
                 self.lbState.text="Left"
         }
+        
+        lbState.nc_whenSwipedInDirection(.Down) {[unowned self]  (gestureRecognizer) in
+            self.lbState.text="Down"
+        }
     }
 
 
