@@ -1,6 +1,7 @@
 # NiceGesture
 ![Build Status](https://travis-ci.org/lacklock/NiceGesture.svg?branch=master)
 ![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg)
+![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods](https://img.shields.io/cocoapods/v/NiceGesture.svg?style=flat)](http://cocoadocs.org/docsets/NiceGesture/)
 ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
 
@@ -113,7 +114,7 @@ pod 'NiceGesture'
 Just copy the files which under NiceGesture folder to your project
 
 ###Carthage
-Soon will coming...
+<code>github "lacklock/NiceGesture"</code>
 
 #Contact
 
